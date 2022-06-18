@@ -1,4 +1,4 @@
-# Template_MkDocs
+# Template MkDocs
 ## Config de base pour MkDocs
 Assez minimaliste, mais permet néanmoins de démarrer en comprenant comment 
 - customiser le CSS ;
