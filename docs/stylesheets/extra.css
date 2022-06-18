@@ -1,0 +1,53 @@
+
+:root {
+    /* couleurs de ton thème */
+    --yellow: #ffcc33ff;
+    --green: #809966ff;
+    --blue: #006699ff;
+    --red: #cc6666ff;
+    --gray: #666666ff;
+    --lightyellow: #fffaebff;
+    --lightgreen: #f5f7f3ff;
+    --lightblue: #ebf8ffff;
+    --lightred: #faf0f0ff;
+    --lightgray: #f5f5f5ff;
+
+    /* icônes des admonitions */
+    --md-admonition-icon--ugli-exo: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c-.34.34-.67.67-.68 1-.03.32.31.65.63.96.48.5.95.95.93 1.44-.02.49-.53 1-1.04 1.5l-4.13 4.14L15 14.66l4.25-4.24-.96-.96-1.42 1.41-3.75-3.75 3.84-3.83c.39-.39 1.04-.39 1.41 0l2.34 2.34c.39.37.39 1.02 0 1.41M3 17.25l9.56-9.57 3.75 3.75L6.75 21H3v-3.75z"/></svg>');
+
+}
+
+/* ugli-exo, un exemple d'admonition */
+
+.md-typeset .admonition.ugli-exo,
+.md-typeset details.ugli-exo {
+    font-size: .8rem; /* <--- TAILLE DE POLICE  dans l'admonition */
+    border-color: var(--yellow);
+}
+
+.md-typeset .ugli-exo > .admonition-title,
+.md-typeset .ugli-exo > summary {
+    background-color: var(--yellow);
+    color: #000000;
+    font-size: 1rem; /* <--- TAILLE DE POLICE du titre */
+    border-color: var(--yellow);
+}
+
+.md-typeset .ugli-exo > .admonition-title::before,
+.md-typeset .ugli-exo > summary::before {
+    background-color: #000000; /* couleur de l'icône */
+    -webkit-mask-image: var(--md-admonition-icon--ugli-exo);
+}
+
+[data-md-color-scheme="youtube"] {
+    --md-primary-fg-color: var(--blue);
+}
+
+
+.md-typeset .admonition {
+    font-size: .8rem;
+}
+
+.md-typeset details {
+    font-size: .8rem;
+}
